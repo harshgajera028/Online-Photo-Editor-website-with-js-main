@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>photo editor Website</title>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+  <h1>photo editor javascript</h1>
+  <div class="row-cols-md list-group-horizontal-lg">
+    <div class="container-fluid disabled row">
+      <div class="col-xl-6">
+        <div class="choose_img">
+          <button class="btn btn-dark">choose Image to Edit</button>
+          <button class="btn btn-primary link"><a
+              href="https://github.com/dhrumilpatel30/Online-Photo-Editor-website-with-js" target="_blank">Source
+              Code(Github)</a></button>
+          <input type="file" name="" id="" accept="image/*" hidden />
+        </div>
+      </div>
+      <br>
+      <div class="col-xl-6">
+        <div class="btns_save">
+          <button id="reset" class="btn btn-danger">reset filter</button>
+          <button id="save" class="btn btn-success">save image</button>
+        </div>
+      </div>
+      <br>
+      <div class="col-xl-6">
+        <div class="view_img">
+          <img src="https://www.01net.com/app/uploads/2020/12/MEA-Photos-App-windows-10-1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-xl-6 editor_part">
+        <div class="row filters">
+          <h2>Filters</h2>
+          <div class="col-6">
+            <div class="brightness">
+              <span class="name">Brightess</span>
+              <span class="value">100%</span>
+              <input type="range" class="form-range" max="200" min="0" value="100" />
+            </div>
+            <div class="contrast">
+              <span class="name">Contrast</span>
+              <span class="value">100%</span>
+              <input type="range" class="form-range" max="200" min="0" value="100" />
+            </div>
+            <div class="grayscale">
+              <span class="name">Grayscale(B/W)</span>
+              <span class="value">0%</span>
+              <input type="range" class="form-range" max="100" min="0" value="0" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="saturation">
+              <span class="name">Saturation</span>
+              <span class="value">100%</span>
+              <input type="range" class="form-range" max="200" min="0" value="100" />
+            </div>
+            <div class="blur">
+              <span class="name">Blur</span>
+              <span class="value">0%</span>
+              <input type="range" class="form-range" max="100" min="0" value="0" />
+            </div>
+            <div class="invert">
+              <span class="name">Invert</span>
+              <span class="value">0%</span>
+              <input type="range" class="form-range" max="100" min="0" value="0" />
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="room1">
+          <h2>rotate & flip</h2>
+          <button class="btn btn-primary btn-lg btn-block" title="rotate_left" id="rotate_left">Rotate Left</button>
+          <button class="btn btn-primary btn-lg btn-block" title=" rotate_right" id="rotate_right">Rotate Right</button>
+          <button class="btn btn-primary btn-lg btn-block" title=" flip_x" id="flip_x">Flip Horizontal</button>
+          <button class="btn btn-primary btn-lg btn-block" title=" flip_y" id="flip_y">Flip Vertical</button>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

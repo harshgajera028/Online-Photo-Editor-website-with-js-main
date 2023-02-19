@@ -1,0 +1,107 @@
+/*font of webite*/
+@font-face {
+    font-family: 'Sono';
+    src: url(fonts/Sono-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Sono';
+    src: url(fonts/Sono-SemiBold.ttf);
+    font-weight: bold;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding-top: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) and (min-width:1200px) {
+    .view_img img {
+        width: 30rem !important;
+        height: 27rem !important;
+    }
+}
+
+.filters input {
+    width: 100% !important;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.link a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.btns_save {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.view_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.view_img img {
+    width: 35rem;
+    height: 34rem;
+    object-fit: contain;
+    box-shadow: 0 1rem 1rem 0 rgba(1, 1, 1, 0.3);
+}
+
+.choose_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.room1 button {
+    font-size: 1rem;
+}
+
+.disabled img {
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+.disabled .filters {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.disabled .btns_save {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.disabled .room1 {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.disabled .crop {
+    pointer-events: none;
+    opacity: .5;
+
+}
